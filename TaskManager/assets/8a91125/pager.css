@@ -1,0 +1,64 @@
+/**
+ * CSS styles for CLinkPager.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link https://www.yiiframework.com/
+ * @copyright 2008-2010 Yii Software LLC
+ * @license https://www.yiiframework.com/license/
+ * @since 1.0
+ */
+
+.yiiPager {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0 0;
+    font-size: 1.07em;
+    justify-content: flex-end; /* cambia da flex-start a flex-end */
+}
+
+.yiiPager .yiiPager-header {
+    font-weight: 600;
+    color: #1e293b;
+    margin-right: 10px;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    /* Allinea verticalmente con i bottoni */
+    display: inline-block;
+}
+
+.yiiPager li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.yiiPager li a,
+.yiiPager li span {
+    display: inline-block;
+    padding: 7px 13px;
+    border-radius: 6px;
+    background: #f1f5f9;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.15s, color 0.15s;
+}
+
+.yiiPager li.selected span,
+.yiiPager li.selected a {
+    background: #2563eb;
+    color: #fff;
+    cursor: default;
+}
+
+.yiiPager li a:hover {
+    background: #06b6d4;
+    color: #fff;
+}
+
+.yiiPager li.hidden {
+    display: none;
+}

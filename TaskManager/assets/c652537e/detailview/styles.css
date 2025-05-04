@@ -1,0 +1,61 @@
+/* Modern DetailView Style */
+:root {
+    --primary: #2563eb;
+    --accent: #06b6d4;
+    --primary-dark: #1e40af;
+    --detail-bg: #fff;
+    --detail-row-even: #f8fafc;
+    --detail-row-odd: #eef2f6;
+    --detail-border: #e5e7eb;
+}
+
+table.detail-view {
+    background: var(--detail-bg);
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(30,64,175,0.07);
+    margin: 0 0 28px 0;
+    font-size: 1.04em;
+    border: 1px solid var(--detail-border);
+}
+
+table.detail-view th,
+table.detail-view td {
+    font-size: 1em;
+    border: none;
+    padding: 0.85em 1em;
+    vertical-align: top;
+}
+
+table.detail-view th {
+    text-align: right;
+    width: 180px;
+    background: #f1f5f9;
+    color: var(--primary-dark);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+table.detail-view td {
+    background: var(--detail-bg);
+    color: #1e293b;
+}
+
+table.detail-view .null {
+    color: #bbb;
+    font-style: italic;
+}
+
+@media (max-width: 700px) {
+    table.detail-view th,
+    table.detail-view td {
+        padding: 0.7em 0.4em;
+        font-size: 0.97em;
+    }
+    table.detail-view {
+        font-size: 0.97em;
+    }
+}

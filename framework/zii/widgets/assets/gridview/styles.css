@@ -1,0 +1,156 @@
+/* Futuristic CGridView Table Style */
+:root {
+    --primary: #2563eb;
+    --accent: #06b6d4;
+    --primary-dark: #1e40af;
+    --table-bg: #fff;
+    --table-row-even: #f8fafc;
+    --table-row-odd: #f3f4f6;
+    --table-hover: #e0e7ef;
+    --table-selected: #dbeafe;
+    --header-bg: #f1f5f9;
+    --header-border: #d1d5db;
+}
+
+.grid-view {
+    padding: 24px 0 10px 0;
+}
+
+.grid-view table.items {
+    background: var(--table-bg);
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(30,64,175,0.06);
+    margin-bottom: 28px;
+    font-size: 1.04em;
+    border: 1px solid #e5e7eb;
+}
+
+.grid-view table.items th, .grid-view table.items td {
+    font-size: 1em;
+    border: none;
+    padding: 0.85em 1em;
+}
+
+.grid-view table.items th {
+    background: var(--header-bg);
+    color: #22223b;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 2px solid var(--header-border);
+}
+
+.grid-view table.items th a {
+    color: var(--primary-dark);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.18s;
+}
+
+.grid-view table.items th a:hover {
+    color: var(--accent);
+}
+
+.grid-view table.items tr.even td {
+    background: var(--table-row-even);
+}
+
+.grid-view table.items tr.odd td {
+    background: var(--table-row-odd);
+}
+
+.grid-view table.items tr.selected td {
+    background: var(--table-selected) !important;
+}
+
+.grid-view table.items tr:hover td {
+    background: var(--table-hover) !important;
+    color: #1e293b;
+    transition: background 0.18s, color 0.18s;
+}
+
+.grid-view .button-column {
+    text-align: center;
+    width: 90px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.grid-view .button-column a,
+.grid-view .button-column button {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: var(--primary);
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    font-size: 1em;
+    transition: background 0.15s, transform 0.12s;
+    box-shadow: 0 1px 4px rgba(30,64,175,0.07);
+}
+.grid-view .button-column a:hover,
+.grid-view .button-column button:hover {
+    background: var(--accent);
+    color: #fff !important;
+    transform: translateY(-2px) scale(1.05);
+}
+
+.grid-view .checkbox-column {
+    width: 22px;
+}
+
+.grid-view .summary {
+    margin: 0 0 8px 0;
+    text-align: right;
+    color: var(--primary-dark);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.grid-view .pager {
+    margin: 12px 0 0 0;
+    text-align: right;
+}
+
+.grid-view .empty {
+    font-style: italic;
+    color: #888;
+    padding: 18px;
+    text-align: center;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    width: 100%;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 6px;
+    padding: 6px 8px;
+    font-size: 1em;
+    background: #f8fafc;
+    transition: border 0.18s;
+}
+.grid-view .filters input:focus,
+.grid-view .filters select:focus {
+    border: 1.5px solid var(--primary);
+    outline: none;
+}
+
+.grid-view .filters {
+    display: none !important; /* TOLGO BARRA FILTRI*/
+}
+
+@media (max-width: 700px) {
+    .grid-view table.items th, .grid-view table.items td {
+        padding: 0.7em 0.4em;
+        font-size: 0.97em;
+    }
+    .grid-view table.items {
+        font-size: 0.97em;
+    }
+}
