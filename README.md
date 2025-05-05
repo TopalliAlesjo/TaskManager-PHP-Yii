@@ -60,19 +60,19 @@ Questa implementazione rende l'applicazione inadatta per ambienti di produzione.
 L'applicazione include le seguenti visualizzazioni principali:
 
 1. **Attività Da Fare** - Visualizzazione delle attività in stato "Da fare"
-   ![Attività Da Fare](readmeimg/to_do.png)
+   ![Attività Da Fare](ReadMeIMG/to_do.png)
 
 2. **Attività In Elaborazione** - Visualizzazione delle attività in stato "In elaborazione"
-   ![Attività In Elaborazione](readmeimg/in_work.png)
+   ![Attività In Elaborazione](ReadMeIMG/in_work.png)
 
 3. **Attività Concluse** - Visualizzazione delle attività in stato "Concluse"
-   ![Attività Concluse](readmeimg/done.png)
+   ![Attività Concluse](ReadMeIMG/done.png)
 
 4. **Creazione Attività** - Interfaccia per la creazione di nuove attività
-   ![Creazione Attività](readmeimg/create.png)
+   ![Creazione Attività](ReadMeIMG/create.png)
 
 5. **Visualizzazione Dettagli** - Interfaccia per visualizzare i dettagli di un'attività
-   ![Visualizzazione Dettagli](readmeimg/view.png)
+   ![Visualizzazione Dettagli](ReadMeIMG/view.png)
 
 ## Licenza
 Questo progetto è distribuito sotto licenza Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
